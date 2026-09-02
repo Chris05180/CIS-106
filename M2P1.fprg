@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M2P1"/>
+        <attribute name="authors" value="herna"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-31 04:06:17 PM"/>
+        <attribute name="created" value="aGVybmE7RlJJSk9MOzIwMjYtMDgtMzE7MDI6MDc6MjIgUE07MjI1OQ=="/>
+        <attribute name="edited" value="aGVybmE7RlJJSk9MOzIwMjYtMDgtMzE7MDQ6MDY6MTcgUE07MTsyMzcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity" type="Integer" array="False" size=""/>
+            <declare name="priceperunit" type="Real" array="False" size=""/>
+            <declare name="extendedprice" type="Real" array="False" size=""/>
+            <input variable="quantity"/>
+            <input variable="priceperunit"/>
+            <assign variable="extendedprice" expression="quantity * priceperunit"/>
+            <output expression="&quot;Your extended price is $&quot; &amp;extendedprice" newline="True"/>
+        </body>
+    </function>
+    <function name="PricePerUnit" type="None" variable="">
+        <parameters>
+            <parameter name="B" type="Real" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+    <function name="Quantity" type="None" variable="">
+        <parameters>
+            <parameter name="Quantities" type="Integer" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+</flowgorithm>
